@@ -1,0 +1,18 @@
+# Core packages
+google-adk==1.1.1
+mcp==1.9.2
+pydantic==2.11.5
+
+# Google ADK dependencies
+google-api-core==2.24.2
+google-auth==2.40.2
+google-cloud-core==2.4.3
+google-genai==1.18.0
+googleapis-common-protos==1.70.0
+protobuf==6.31.1
+
+# Pydantic dependencies
+annotated-types==0.7.0
+pydantic-core==2.33.2
+typing_extensions==4.13.2
+typing-inspection==0.4.1
