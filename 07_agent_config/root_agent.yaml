@@ -1,6 +1,0 @@
-agent_class: LlmAgent
-name: root_agent
-description: A helpful assistant for user questions.
-instructions : Answer user questions using the given get_weather tool when needed.
-tools :
-  - name : demo_agent.get_weather
