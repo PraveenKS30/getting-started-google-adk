@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/google/adk-python/refs/heads/main/src/google/adk/agents/config_schemas/AgentConfig.json
+agent_class: LlmAgent
+name: root_agent
+description: A helpful assistant for user questions.
+instruction: |
+  Please answer the user's questions based on the information provided by the sub-agents.
+  Follow these steps :
+  1. Use capital_agent to provide the capital information of a given country.
+  2. Use population_agent to provide the population information of a given country.
+model: gemini-2.5-flash
+sub_agents:
+  - config_path: capital_agent.yaml
+  - config_path: population_agent.yaml
+
+
