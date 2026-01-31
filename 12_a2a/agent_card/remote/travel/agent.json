@@ -1,0 +1,64 @@
+{
+  "name": "Travel Agent",
+  "description": "A helpful travel assistant that can search for flights and book flights for users",
+  "version": "1.0.0",
+  "url": "http://localhost:8081/a2a/travel",
+  "defaultInputModes": [
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "capabilities": {
+    "streaming": true,
+    "pushNotifications": false
+  },
+  "supportsAuthenticatedExtendedCard": false,
+  "skills": [
+    {
+      "id": "flight_search",
+      "name": "Search Flights",
+      "description": "Search for flights with hardcoded source (NYC) and destination (LAX) parameters. Returns available flight options with details including flight ID, airline, departure/arrival times, duration, price, and number of stops.",
+      "tags": [
+        "flights",
+        "search",
+        "travel",
+        "booking"
+      ],
+      "examples": [
+        "Find available flights from NYC to LAX",
+        "Show me flight options",
+        "What flights are available?"
+      ],
+      "inputModes": [
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ]
+    },
+    {
+      "id": "flight_booking",
+      "name": "Book Flight",
+      "description": "Book a flight with hardcoded booking details. Returns comprehensive booking information including booking ID, confirmation number, passenger details, seat assignments, meal preferences, pricing, payment method, and cancellation policy.",
+      "tags": [
+        "flights",
+        "booking",
+        "travel",
+        "confirmation"
+      ],
+      "examples": [
+        "Book a flight for me",
+        "Complete the flight booking",
+        "I want to confirm my flight reservation"
+      ],
+      "inputModes": [
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ]
+    }
+  ]
+}
