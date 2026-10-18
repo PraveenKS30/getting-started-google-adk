@@ -1,0 +1,4 @@
+google-adk
+arize-phoenix
+arize-phoenix-otel
+openinference-instrumentation-google-adk
